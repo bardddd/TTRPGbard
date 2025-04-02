@@ -1,0 +1,37 @@
+{
+    "name": "Robot Name",
+    "first_encounter": "test name",
+    "movement": "0m or 0km/h",
+    "weakpoint": "name",
+    "armor": "location",
+    "dmg_reduction": "0",
+    "actions": [
+        "first action",
+        "second action",
+        "third action"
+    ],
+    "aggression": "0-20",
+    "endurance": "injury name",
+    "software_complexity": "0-20",
+    "attributes": {
+        "dexterity": "0-20",
+        "perception": "0-20",
+        "wits":"0-20",
+        "constitution": "0-20"
+      },
+      "training":{
+        "tameable": "yes/no",
+        "commands": [
+            "Command 1",
+            "Command 2"
+        ]
+      },
+      "special_effects": [
+       "special effect 1",
+       "special effect 1" 
+      ],
+      "other_rules": [
+        "rule 1",
+        "rule 2"
+      ]
+}
