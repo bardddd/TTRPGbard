@@ -1,6 +1,7 @@
 {
   "name": "NPC Name",
   "place_of_origin": "Place of Origin",
+  "disease": "disease",
   "armor": {
     "head": "Nothing",
     "torso": "Nothing",
