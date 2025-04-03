@@ -1,27 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TTRPG bard</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <header>
-    <h1 class="page-title"><a href="../index.html">TTRPG bard</a></h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTRPG bard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      #stuff_on {
+        display: flex;
+        flex-direction: column;
+      }
 
-  <form action="/action_page.php">
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country" readonly><br><br>
-    <input type="submit" value="Submit">
-  </form>
+      #attributes {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: 100px;
+      }
 
-  <footer>
-    <p>&copy; 2025 TTRPG bard</p>
-  </footer>
+      #important_data {
+        display: flex;
+        flex-direction: row;
+      }
 
-  <!-- Link to External JavaScript -->
-  <script src="scripts/npc_gen.js"></script>
-</body>
+      .attribute {
+        display: flex;
+        flex-direction: column;
+      }
+      h2 {
+        display: flex;
+        flex-direction: column;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="page-title"><a href="../index.html">TTRPG bard</a></h1>
+    </header>
+
+    <h1>NPC Data</h1>
+
+    <!-- Basic NPC Information -->
+    <div id="name">NPC Name</div>
+    <div id="place_of_origin">Place of Origin</div>
+    <div id="important_data">
+      <div class="attribute">
+        <h2>Armor</h2>
+        <ul>
+          <li id="armor_head">Head: Nothing</li>
+          <li id="armor_torso">Torso: Nothing</li>
+          <li id="armor_left_arm">Left Arm: Nothing</li>
+          <li id="armor_right_arm">Right Arm: Nothing</li>
+          <li id="armor_left_leg">Left Leg: Nothing</li>
+          <li id="armor_right_leg">Right Leg: Nothing</li>
+        </ul>
+      </div>
+      <div class="attribute">
+        <h2>Weapons</h2>
+        <ul>
+          <li id="weapons_0">Weapon 1</li>
+          <li id="weapons_1">Weapon 2</li>
+        </ul>
+      </div>
+      <div class="attribute">
+        <h2>Gear Loot</h2>
+        <ul>
+          <li id="gear_loot_item1">Item 1: Chance</li>
+          <li id="gear_loot_item2">Item 2: Chance</li>
+          <li id="gear_loot_item3">Item 3: Chance</li>
+        </ul>
+      </div>
+
+      <div id="attributes">
+        <h2>Attributes</h2>
+
+        <!-- Dexterity Attribute -->
+        <div class="attribute">
+          <h3>Dexterity</h3>
+          <div id="dexterity_level">Level: number</div>
+          <ul>
+            <li id="dexterity_skill_1">Skill 1</li>
+            <li id="dexterity_skill_2">Skill 2</li>
+            <li id="dexterity_skill_3">Skill 3</li>
+          </ul>
+        </div>
+
+        <!-- Perception Attribute -->
+        <div class="attribute">
+          <h3>Perception</h3>
+          <div id="perception_level">Level: number</div>
+          <ul>
+            <li id="perception_skill_1">Skill 1</li>
+            <li id="perception_skill_2">Skill 2</li>
+            <li id="perception_skill_3">Skill 3</li>
+          </ul>
+        </div>
+
+        <!-- Character Attribute -->
+        <div class="attribute">
+          <h3>Character</h3>
+          <div id="character_level">Level: number</div>
+          <ul>
+            <li id="character_skill_1">Skill 1</li>
+            <li id="character_skill_2">Skill 2</li>
+            <li id="character_skill_3">Skill 3</li>
+          </ul>
+        </div>
+
+        <!-- Wits Attribute -->
+        <div class="attribute">
+          <h3>Wits</h3>
+          <div id="wits_level">Level: number</div>
+          <ul>
+            <li id="wits_skill_1">Skill 1</li>
+            <li id="wits_skill_2">Skill 2</li>
+            <li id="wits_skill_3">Skill 3</li>
+          </ul>
+        </div>
+
+        <!-- Constitution Attribute -->
+        <div class="attribute">
+          <h3>Constitution</h3>
+          <div id="constitution_level">Level: number</div>
+          <ul>
+            <li id="constitution_skill_1">Skill 1</li>
+            <li id="constitution_skill_2">Skill 2</li>
+            <li id="constitution_skill_3">Skill 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 TTRPG bard</p>
+    </footer>
+
+    <script src="scripts/npc_gen.js"></script>
+  </body>
 </html>

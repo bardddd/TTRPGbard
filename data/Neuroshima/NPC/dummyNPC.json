@@ -1,156 +1,63 @@
 {
-    "name": "NPC Name",
-    "place_of_origin": "Place of Origin",
-    "armor":{
-        "head": "Nothing",
-        "torso": "Nothing",
-        "left_arm": "Nothing",
-        "right_arm": "Nothing",
-        "left_leg": "Nothing",
-        "right_leg": "Nothing"
+  "name": "NPC Name",
+  "place_of_origin": "Place of Origin",
+  "armor": {
+    "head": "Nothing",
+    "torso": "Nothing",
+    "left_arm": "Nothing",
+    "right_arm": "Nothing",
+    "left_leg": "Nothing",
+    "right_leg": "Nothing"
+  },
+  "weapons": [
+    "weapon1",
+    "weapon2"
+  ],
+  "gear_loot": {
+    "item1": {"item":"chance"},
+    "item2": {"item":"chance"},
+    "item3": {"item":"chance"}
+},
+  "attributes": {
+    "level": "number",
+    "dexterity": {
+      "skills": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ]
     },
-    "weapons":[
-        "weapon1",
-        "weapon2"
-    ],
-    "gear": [
-      "Gear Item 1",
-      "Gear Item 2",
-      "Gear Item 3"
-    ],
-    "attributes": {
-      "dexterity": {
-        "packages": [
-          {
-            "package_name": "Package 1",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 2",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          }
-        ]
-      },
-      "perception": {
-        "packages": [
-          {
-            "package_name": "Package 1",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 2",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 3",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          }
-        ]
-      },
-      "character": {
-        "packages": [
-          {
-            "package_name": "Package 1",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 2",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 3",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          }
-        ]
-      },
-      "wits": {
-        "packages": [
-          {
-            "package_name": "Package 1",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 2",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 3",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 4",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          }
-        ]
-      },
-      "constitution": {
-        "packages": [
-          {
-            "package_name": "Package 1",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          },
-          {
-            "package_name": "Package 2",
-            "skills": [
-              "Skill 1",
-              "Skill 2",
-              "Skill 3"
-            ]
-          }
-        ]
-      }
+    "perception": {
+      "level": "number",
+      "skills": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3"
+      ]
     }
+  },
+  "character": {
+    "level": "number",
+    "skills": [
+      "Skill 1",
+      "Skill 2",
+      "Skill 3"
+    ]
+  },
+  "wits": {
+    "level": "number",
+    "skills": [
+      "Skill 1",
+      "Skill 2",
+      "Skill 3"
+    ]
+  },
+  "constitution": {
+    "level": "number",
+    "skills": [
+      "Skill 1",
+      "Skill 2",
+      "Skill 3"
+    ]
   }
-  
+}
