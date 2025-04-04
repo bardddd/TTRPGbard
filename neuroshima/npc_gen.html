@@ -14,7 +14,8 @@
       #attributes {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
+
         margin-left: 100px;
       }
 
@@ -23,8 +24,17 @@
         flex-direction: row;
       }
 
+      #npc_data{
+        padding: 50px;
+      }
+
+
+      .loot, .armor, .attribute_level, .weapon{
+        margin-top: 10px;
+      }
       .attribute {
         display: flex;
+        padding: 20px;
         flex-direction: column;
       }
       h2 {
@@ -34,6 +44,7 @@
       ul {
         display: flex;
         flex-direction: column;
+        list-style-type: none;
       }
     </style>
   </head>
@@ -42,101 +53,77 @@
     <header>
       <h1 class="page-title"><a href="../index.html">TTRPG bard</a></h1>
     </header>
+    <div id="npc_data">
+      <h1>NPC Data</h1>
 
-    <h1>NPC Data</h1>
-
-    <!-- Basic NPC Information -->
-    <div id="name">NPC Name</div>
-    <div id="place_of_origin">Place of Origin</div>
-    <div id="disease">Disease</div>
-    <div id="important_data">
-      <div class="attribute">
-        <h2>Armor</h2>
-        <ul>
-          <li id="armor_head">Head: Nothing</li>
-          <li id="armor_torso">Torso: Nothing</li>
-          <li id="armor_left_arm">Left Arm: Nothing</li>
-          <li id="armor_right_arm">Right Arm: Nothing</li>
-          <li id="armor_left_leg">Left Leg: Nothing</li>
-          <li id="armor_right_leg">Right Leg: Nothing</li>
-        </ul>
-      </div>
-      <div class="attribute">
-        <h2>Weapons</h2>
-        <ul>
-          <li id="weapons_0">Weapon 1</li>
-          <li id="weapons_1">Weapon 2</li>
-        </ul>
-      </div>
-      <div class="attribute">
-        <h2>Gear Loot</h2>
-        <ul>
-          <li id="gear_loot_item1">Item 1: Chance</li>
-          <li id="gear_loot_item2">Item 2: Chance</li>
-          <li id="gear_loot_item3">Item 3: Chance</li>
-        </ul>
-      </div>
-
-      <div id="attributes">
-        <h2>Attributes</h2>
-
-        <!-- Dexterity Attribute -->
+      <!-- Basic NPC Information -->
+      <div id="name">NPC Name</div>
+      <div id="place_of_origin">Place of Origin</div>
+      <div id="disease">Disease</div>
+      <div id="important_data">
         <div class="attribute">
-          <h3>Dexterity</h3>
-          <div id="dexterity_level">Level: number</div>
+          <h2>Armor</h2>
           <ul>
-            <li id="dexterity_skill_1">Skill 1</li>
-            <li id="dexterity_skill_2">Skill 2</li>
-            <li id="dexterity_skill_3">Skill 3</li>
+            <li class="armor">Head: Nothing</li>
+            <li class="armor">Torso: Nothing</li>
+            <li class="armor">Left Arm: Nothing</li>
+            <li class="armor">Right Arm: Nothing</li>
+            <li class="armor">Left Leg: Nothing</li>
+            <li class="armor">Right Leg: Nothing</li>
+          </ul>
+        </div>
+        <div class="attribute">
+          <h2>Weapons</h2>
+          <ul>
+            <li class="weapon">Weapon: Weapon 1</li>
+            <li class="weapon">Weapon: Weapon 2</li>
           </ul>
         </div>
 
-        <!-- Perception Attribute -->
         <div class="attribute">
-          <h3>Perception</h3>
-          <div id="perception_level">Level: number</div>
-          <ul>
-            <li id="perception_skill_1">Skill 1</li>
-            <li id="perception_skill_2">Skill 2</li>
-            <li id="perception_skill_3">Skill 3</li>
+          <h2>Loot Table</h2>
+          <ul id="loot_table">
+            <li class="loot">Loot1: chance</li>
+            <li class="loot">Loot2: chance</li>
+            <li class="loot">Loot3: chance</li>
           </ul>
         </div>
 
-        <!-- Character Attribute -->
-        <div class="attribute">
-          <h3>Character</h3>
-          <div id="character_level">Level: number</div>
-          <ul>
-            <li id="character_skill_1">Skill 1</li>
-            <li id="character_skill_2">Skill 2</li>
-            <li id="character_skill_3">Skill 3</li>
-          </ul>
-        </div>
+        <div id="attributes">
+          <h2>Attributes</h2>
 
-        <!-- Wits Attribute -->
-        <div class="attribute">
-          <h3>Wits</h3>
-          <div id="wits_level">Level: number</div>
-          <ul>
-            <li id="wits_skill_1">Skill 1</li>
-            <li id="wits_skill_2">Skill 2</li>
-            <li id="wits_skill_3">Skill 3</li>
-          </ul>
-        </div>
+          <!-- Dexterity Attribute -->
+          <div class="attribute">
+            <h3>Dexterity</h3>
+            <div class="attribute_level">Level: number</div>
+          </div>
 
-        <!-- Constitution Attribute -->
-        <div class="attribute">
-          <h3>Constitution</h3>
-          <div id="constitution_level">Level: number</div>
-          <ul>
-            <li id="constitution_skill_1">Skill 1</li>
-            <li id="constitution_skill_2">Skill 2</li>
-            <li id="constitution_skill_3">Skill 3</li>
-          </ul>
+          <!-- Perception Attribute -->
+          <div class="attribute">
+            <h3>Perception</h3>
+            <div class="attribute_level">Level: number</div>
+          </div>
+
+          <!-- Character Attribute -->
+          <div class="attribute">
+            <h3>Character</h3>
+            <div class="attribute_level">Level: number</div>
+          </div>
+
+          <!-- Wits Attribute -->
+          <div class="attribute">
+            <h3>Wits</h3>
+            <div class="attribute_level">Level: number</div>
+          </div>
+
+          <!-- Constitution Attribute -->
+          <div class="attribute">
+            <h3>Constitution</h3>
+            <div class="attribute_level">Level: number</div>
+          </div>
         </div>
       </div>
     </div>
-
     <footer>
       <p>&copy; 2025 TTRPG bard</p>
     </footer>

@@ -10,55 +10,28 @@
     "left_leg": "Nothing",
     "right_leg": "Nothing"
   },
-  "weapons": [
-    "weapon1",
-    "weapon2"
-  ],
-  "gear_loot": {
-    "item1": {"item":"chance"},
-    "item2": {"item":"chance"},
-    "item3": {"item":"chance"}
-},
+  "weapons": ["weapon1", "weapon2"],
+  "loot_table": {
+    "item1": "chance",
+    "item2": "chance",
+    "item3": "chance"
+  },
   "attributes": {
-    "level": "number",
     "dexterity": {
-      "skills": [
-        "Skill 1",
-        "Skill 2",
-        "Skill 3"
-      ]
+      "level": "number"
     },
     "perception": {
-      "level": "number",
-      "skills": [
-        "Skill 1",
-        "Skill 2",
-        "Skill 3"
-      ]
+      "level": "number"
+    },
+
+    "character": {
+      "level": "number"
+    },
+    "wits": {
+      "level": "number"
+    },
+    "constitution": {
+      "level": "number"
     }
-  },
-  "character": {
-    "level": "number",
-    "skills": [
-      "Skill 1",
-      "Skill 2",
-      "Skill 3"
-    ]
-  },
-  "wits": {
-    "level": "number",
-    "skills": [
-      "Skill 1",
-      "Skill 2",
-      "Skill 3"
-    ]
-  },
-  "constitution": {
-    "level": "number",
-    "skills": [
-      "Skill 1",
-      "Skill 2",
-      "Skill 3"
-    ]
   }
 }
